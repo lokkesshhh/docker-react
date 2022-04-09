@@ -4,4 +4,4 @@ services:
 before install:
   - docker build -t  lokkesshhh/docker-react -f Dockerfile.dev . 
 script:
-  - travis_wait docker run lokkesshhh/docker-react npm run test -- --coverage 
+  - docker run -e CI=true lokkesshhh/docker-react npm run test -- --coverage 
