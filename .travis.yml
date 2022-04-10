@@ -17,3 +17,4 @@ deploy:
    access_key_id: $aws_access_key
    secret_access_key:
      secure: "$aws_secret_key"
+   skip_cleanup: true
